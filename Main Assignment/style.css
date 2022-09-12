@@ -1,0 +1,154 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+.header{
+    background-color: black;
+    padding: 10px 0;
+}
+.logo img{
+    max-width: 160px;
+}
+
+.menu ul{
+    text-align: center;
+}
+.menu ul li{
+    display: inline-block;
+}
+.menu ul li a{
+    font-size: 20px;
+    text-decoration: none;
+    color: #fff;
+    padding: 17px;
+    transition: 1s;
+
+}
+.menu ul li a:hover{
+    color: #C66D16;
+    
+}
+
+/* dropdown */
+
+.menu ul li{
+    position: relative;
+}
+
+.menu ul li ul{
+    position: absolute;
+    width: 200px;
+    background-color: black;
+    text-align: left;
+    opacity: 0;
+    visibility: hidden;
+    transition: 1s;
+    margin-top: 100%;
+    margin-left: -4px;
+    transform: scale(0);
+}
+
+
+.menu ul li:hover>ul {
+    opacity: 1;
+    visibility: visible;
+    margin-top: 0;
+    transform: scale(1);
+ 
+}
+
+.menu ul li ul li {
+    display: block;
+}
+
+.menu ul li ul li a {
+    display: block;
+    margin-left: 0;
+    transition: 1s;
+}
+
+.menu ul li ul li a:hover {
+    display: block;
+    margin-left: 0;
+    padding-left: 20px;
+}
+
+.menu ul li ul li ul {
+    position: absolute;
+    left: 120%;
+    top: 0;
+}
+
+
+.menu ul li ul li:hover > ul {
+    position: absolute;
+    left: 100%;
+    top: 0;
+}
+
+/* banner */
+
+.banner{
+    padding: 200px 0;
+    background-image: url(./img/banner.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-color: rgba(0,0,0,0.68);
+}
+
+.banner h1 {
+    text-align: center;
+    font-size: 60px;
+    color: #fff;
+    margin-bottom: 30px;
+}
+.banner h3{
+    font-size: 35px;
+    text-align: center;
+}
+.banner a{
+    display: inline-block;
+    text-decoration: none;
+    background-color: #C69453;
+    padding: 8px;
+    font-size: 28px;
+    margin-top: 20px;
+    border-radius:15px;
+    color: #fff;
+}
+
+.card a{
+    display: inline-block;
+    background-color: #C69453;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+}
+
+
+
+.footer{
+    padding: 100px 0;
+    background-color: #6D6D6D;
+}
+.footer p{
+    color: #fff;
+    display: inline-block;
+    margin-left: 30px;
+}
+
+.social-icon ul{
+    text-align: center;
+}
+.social-icon ul li{
+    display: inline-block;
+}
+.social-icon ul li a{
+    text-decoration: none;
+    padding: 15px;
+    color: #fff;
+
+}
